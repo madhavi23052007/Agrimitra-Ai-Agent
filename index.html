@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agrimitra – AI-powered farming companion powered by IBM WatsonX Orchestrate. Get crop advisory, weather alerts, market prices and government scheme guidance." />
+  <title>Agrimitra – Your AI Farming Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="#home" aria-label="Agrimitra home">
+      <span class="logo-icon" aria-hidden="true">🌱</span>
+      Agrimitra
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#stories">Stories</a></li>
+      <li><a href="#chat" class="nav-cta">Talk to Agent ↗</a></li>
+    </ul>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="mobileNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drop-down -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#services">Services</a>
+    <a href="#stories">Farmer Stories</a>
+    <a href="#chat" class="m-cta">Talk to Agent ↗</a>
+  </nav>
+</header>
+
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+
+    <div class="hero-badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      Powered by IBM WatsonX Orchestrate
+    </div>
+
+    <h1>Your Intelligent<br /><em>AI Farming</em> Companion</h1>
+
+    <p class="hero-sub">
+      From crop planning and soil health to live market prices and government
+      schemes — Agrimitra is with you every step of the way.
+    </p>
+
+    <div class="hero-btns">
+      <a class="btn-primary" href="#chat">Chat with Agrimitra</a>
+      <a class="btn-ghost"   href="#how">See How It Works</a>
+    </div>
+
+    <div class="hero-stats" aria-label="Key statistics">
+      <div class="stat">
+        <div class="stat-num">50K+</div>
+        <div class="stat-lbl">Farmers Helped</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">120+</div>
+        <div class="stat-lbl">Crop Varieties</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24 / 7</div>
+        <div class="stat-lbl">AI Availability</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">15+</div>
+        <div class="stat-lbl">Regional Languages</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     LIVE PRICE TICKER
+════════════════════════════════════════ -->
+<div class="ticker" aria-label="Live mandi prices" role="marquee">
+  <div class="ticker-track">
+    <span>🌾 Wheat — ₹2,275/qtl</span>
+    <span>🌽 Maize — ₹1,962/qtl</span>
+    <span>🧅 Onion — ₹1,540/qtl</span>
+    <span>🍅 Tomato — ₹3,100/qtl</span>
+    <span>🫘 Soybean — ₹4,600/qtl</span>
+    <span>🌾 Paddy — ₹2,183/qtl</span>
+    <span>🫙 Cotton — ₹7,020/qtl</span>
+    <span>🌻 Sunflower — ₹6,760/qtl</span>
+    <span>🌶️ Chilli — ₹9,200/qtl</span>
+    <span>🥜 Groundnut — ₹5,400/qtl</span>
+    <!-- duplicate set for seamless loop -->
+    <span>🌾 Wheat — ₹2,275/qtl</span>
+    <span>🌽 Maize — ₹1,962/qtl</span>
+    <span>🧅 Onion — ₹1,540/qtl</span>
+    <span>🍅 Tomato — ₹3,100/qtl</span>
+    <span>🫘 Soybean — ₹4,600/qtl</span>
+    <span>🌾 Paddy — ₹2,183/qtl</span>
+    <span>🫙 Cotton — ₹7,020/qtl</span>
+    <span>🌻 Sunflower — ₹6,760/qtl</span>
+    <span>🌶️ Chilli — ₹9,200/qtl</span>
+    <span>🥜 Groundnut — ₹5,400/qtl</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     FEATURES
+════════════════════════════════════════ -->
+<section class="section section--alt" id="features">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="sec-tag">Core Features</span>
+      <h2 class="sec-title">Everything a Farmer Needs, Instantly</h2>
+      <p class="sec-sub">
+        Agrimitra's AI understands local context and delivers personalised,
+        actionable guidance in your language.
+      </p>
+    </div>
+
+    <div class="feat-grid">
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <h3>Real-Time Crop Advisory</h3>
+        <p>Instant guidance on planting schedules, pest management, fertilisation and harvesting — tailored to your crop and region.</p>
+      </article>
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 15a4 4 0 0 0 4 4h10a4 4 0 0 0 0-8H6.5A3.5 3.5 0 1 1 6.5 4H17"/>
+          </svg>
+        </div>
+        <h3>Weather Intelligence</h3>
+        <p>Hyper-local forecasts and early alerts help you plan irrigation, spraying and harvesting at precisely the right time.</p>
+      </article>
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <h3>Market Price Tracker</h3>
+        <p>Live mandi prices, trend forecasts and best-sell-time recommendations to maximise your farm income every season.</p>
+      </article>
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Soil Health Analysis</h3>
+        <p>Input soil-test results and receive a precise nutrient management plan to restore and maintain peak soil productivity.</p>
+      </article>
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </div>
+        <h3>Government Schemes</h3>
+        <p>Discover eligibility for subsidies, crop loans and PM-KISAN insurance with step-by-step application guidance.</p>
+      </article>
+
+      <article class="feat-card reveal">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e8b45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>Multilingual Support</h3>
+        <p>Chat in Hindi, Telugu, Tamil, Marathi, Kannada, Punjabi and more — Agrimitra speaks your language fluently.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════ -->
+<section class="section" id="how">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="sec-tag">How It Works</span>
+      <h2 class="sec-title">Three Simple Steps to Smarter Farming</h2>
+      <p class="sec-sub">
+        Designed to be effortless for any farmer, anywhere, on any device —
+        no tech skills required.
+      </p>
+    </div>
+
+    <div class="steps-row">
+      <div class="step-item reveal">
+        <div class="step-num" aria-hidden="true">1</div>
+        <h4>Start a Conversation</h4>
+        <p>Open the chat widget and describe your farming situation or question in your own words.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num" aria-hidden="true">2</div>
+        <h4>AI Analyses Context</h4>
+        <p>IBM WatsonX processes your input, fetches live data and generates personalised recommendations.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num" aria-hidden="true">3</div>
+        <h4>Act on Insights</h4>
+        <p>Receive clear, actionable advice and optional connections to local agronomists and markets.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════ -->
+<section class="section section--pale" id="services">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="sec-tag">Our Services</span>
+      <h2 class="sec-title">A Full Suite of Agricultural Intelligence</h2>
+      <p class="sec-sub">
+        From seed to sale, Agrimitra covers every stage of your farming lifecycle.
+      </p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">🌾</span>
+        <h4>Crop Planning</h4>
+        <p>Season-wise rotation and variety selection for maximum yield.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">🐛</span>
+        <h4>Pest &amp; Disease ID</h4>
+        <p>Photo-based detection with precise treatment recommendations.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">💧</span>
+        <h4>Irrigation Management</h4>
+        <p>Smart scheduling to conserve water and boost root health.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">📊</span>
+        <h4>Yield Forecasting</h4>
+        <p>Predictive models based on historical and live field data.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">🏦</span>
+        <h4>Agri Finance</h4>
+        <p>Kisan Credit Card, crop loans and micro-insurance assistance.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-emoji" aria-hidden="true">🚜</span>
+        <h4>Equipment Rentals</h4>
+        <p>Connect with local tractor and machinery providers near you.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="section" id="stories">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="sec-tag">Farmer Stories</span>
+      <h2 class="sec-title">Trusted by Farmers Across India</h2>
+      <p class="sec-sub">
+        Real voices, real transformations — from the field to the marketplace.
+      </p>
+    </div>
+
+    <div class="testi-grid">
+
+      <article class="testi-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testi-quote">
+          "Agrimitra told me exactly when to apply fertiliser this season. My paddy
+          yield went up by 18%. I recommend it to all my neighbours."
+        </p>
+        <div class="testi-author">
+          <div class="t-avatar" aria-hidden="true">RK</div>
+          <div>
+            <div class="t-name">Rajesh Kumar</div>
+            <div class="t-role">Paddy Farmer, Andhra Pradesh</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testi-quote">
+          "I got PM-KISAN scheme details and applied in minutes. The agent also helped
+          me understand the soil report from the government lab."
+        </p>
+        <div class="testi-author">
+          <div class="t-avatar" aria-hidden="true">SP</div>
+          <div>
+            <div class="t-name">Sunita Patil</div>
+            <div class="t-role">Soybean Farmer, Maharashtra</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testi-quote">
+          "The weather alert saved my onion crop from an unexpected frost.
+          Agrimitra warned me two days ahead and I covered the field in time."
+        </p>
+        <div class="testi-author">
+          <div class="t-avatar" aria-hidden="true">AS</div>
+          <div>
+            <div class="t-name">Amarjit Singh</div>
+            <div class="t-role">Vegetable Farmer, Punjab</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CTA — IBM WatsonX CHAT SECTION
+════════════════════════════════════════ -->
+<section class="section section--dark chat-cta" id="chat">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Ready to Transform Your Farm?</h2>
+      <p>
+        Start a free conversation with Agrimitra right now —
+        no app download needed, works on any device.
+      </p>
+      <a class="btn-primary" href="#root">Launch Agrimitra Agent</a>
+      <br />
+      <div class="ibm-badge">
+        <span class="ibm-live-dot" aria-hidden="true"></span>
+        Powered by IBM WatsonX Orchestrate — Enterprise AI for Agriculture
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer">
+  <nav class="footer-links" aria-label="Footer links">
+    <a href="#">About</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Contact</a>
+    <a href="#">Help Centre</a>
+  </nav>
+  <p class="footer-copy">
+    © 2025 Agrimitra. All rights reserved. Built for the farmers of tomorrow.
+  </p>
+  <p class="footer-made">Made with IBM Bob</p>
+</footer>
+
+
+<!-- ════════════════════════════════════════
+     IBM WatsonX Orchestrate CHAT MOUNT POINT
+     The wxoLoader will attach the floating
+     chat widget to this element.
+════════════════════════════════════════ -->
+<div id="root" aria-label="Agrimitra AI chat widget"></div>
+
+
+<!-- ════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════ -->
+<script src="script.js"></script>
+
+</body>
+</html>
